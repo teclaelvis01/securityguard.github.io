@@ -1,0 +1,2 @@
+AuthName "prueba"
+AuthUserFile "/home/rsmappde/.htpasswds/public_html/ald_page/passwd"
