@@ -147,7 +147,8 @@ position:relative;
 .dialPad .dials .digits p strong {
 font-size: 30px;
 margin-right: 8px;
-color: #A9A9A9
+color: #A9A9A9;
+font-family: Helvetica,Arial;
 }
 .dialPad .dials .digits:active {
 background: #00caf2;
@@ -239,15 +240,22 @@ clear: both
 	background: #fff;
 	cursor: pointer;
 	width:95%;
-	background-color:green;
+	
 	}
+	/* Boton enviar */
+	#send{
+		-margin-left:120px
+		position:relative;
+		left:90px;
+		background-color:#4CDA64;
+	}
+	#label_send{
+		left:-7px;
+		top:25px;
+		color:#fff;
+	}
+	/* Fin Boton enviar */
 	.dialPad .dials .digits {
-	/* float: left;
-	width: 68px;
-	height: 68px;
-	margin: 10px;
-	border-radius: 60px;
-	border: 1px solid #16a765; */
 	float: left;
 	position: relative;
 	color: #000;
@@ -261,21 +269,27 @@ clear: both
 	}
 	.dialPad .dials .digits p strong {
 	font-size: 32px;
-	color: #A9A9A9;
+	color: #000;
 	line-height: 55px;	
 	}
 	.compact .dials .digits p {
-	  padding-left: 25px;
+	  padding-left: 22px;
 	}
 	.compact .dials .digits p sup {
 	/* text-transform: uppercase;
 	color: #fff;
 	font-size: 10px; */
-	  font-size: 11px;
+	  font-size: 10px;
 	  text-transform: uppercase;
 	  color: #888;
 	  position: relative;
 	  top: 15px;
 	  left: -30px;
 	}
+	.comment{
+		width:235px;
+		height:60px;
+		margin-left:30px;
+	}
+	
 }

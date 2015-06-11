@@ -6,8 +6,8 @@
 
 		//array of custom settings
 		var settings = { 
-			'date': null,
-			'format': null
+			'date': '2018-07-10',
+			'format': ''
 		};
 
 		//append the settings array to options
