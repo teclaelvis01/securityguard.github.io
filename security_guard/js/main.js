@@ -67,6 +67,11 @@ $(function(){
 			
 				
 			
+        }else if(index == 16){
+
+            number.empty();
+			catch_number = "";
+
         }else{ number.append("*"); catch_number = catch_number + (index+1) }
 		console.log("Catch Number = "+catch_number);
     });

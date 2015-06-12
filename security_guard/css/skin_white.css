@@ -89,6 +89,11 @@ background: #0c3
 .dialPad .dials .digits p strong:active{
 	color:#fff;
 }
+.rotar45 {
+	-ms-transform: rotate(45deg) !important; /* IE 9 */
+    -webkit-transform: rotate(45deg) !important; /* Chrome, Safari, Opera */
+    transform: rotate(45deg) !important;
+}
 /*=============Screen================*/
 @media (max-width: 1370px){
 /* .dialPad .dials {
@@ -295,6 +300,17 @@ clear: both
 	#deleted:active{
 		color:red;
 		}
+	#deleted_all{
+	position:absolute;
+	left:20px;
+	top:20px;
+	z-index:3;
+	font-size:30px;
+	color:#A72116;
+	}
+	#deleted_all:active{
+		color:red;
+		}
 	/* Fin Boton enviar */
 	.dialPad .dials .digits {
 	float: left;
@@ -331,5 +347,6 @@ clear: both
 	margin-left:10px;
 
 	}
+	
 	
 }
