@@ -371,7 +371,7 @@ width:423px
 	
 	
 }
-/* =======iPhone 4 & 5======== */
+/* ======= /iPhone 4 & 5======== */
 /* =======iPhone 6======== */
 @media screen and (min-width: 375px) {
 	.dialPad .number {
@@ -426,6 +426,7 @@ width:423px
 	#comment textarea{
 		width:300px;
 		height:60px;
+		font-size:20px;
 	}
 	#deleted{
 		position:absolute;
@@ -446,7 +447,7 @@ width:423px
 
 	
 }
-/* =======iPhone 6======== */
+/* =======iPhone /6======== */
 /* =======iPhone 6 plus======== */
 @media screen and (min-width: 414px) {
 	.dialPad .number {
@@ -497,6 +498,7 @@ width:423px
 	#comment textarea{
 		width:320px;
 		height:80px;
+		font-size:25px;
 	}
 	#deleted{
 		position:absolute;
@@ -517,4 +519,4 @@ width:423px
 
 	
 }
-/* =======iPhone 6 plus======== */
+/* =======iPhone /6 plus======== */
