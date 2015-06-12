@@ -1,8 +1,12 @@
 $(function(){
+	function capture(){
+		console.log("Hola");
+	}
 
     var dials = $(".dials ol li");
     var index;
     var number = $(".number");
+	var comentario = $("#comentario");
 	var catch_number = "";
     var total;
 	var total_catch;
@@ -10,7 +14,7 @@ $(function(){
     dials.click(function(){
 
         index = dials.index(this);
-		//console.log(index);
+		console.log(index);
 		//console.log(number.append(index+1));
         if(index == 9){
 
@@ -28,8 +32,8 @@ $(function(){
 
         }else if(index == 12){
 
-            number.empty();
-			catch_number = "";
+            //number.empty();
+			//catch_number = "";
 
         }else if(index == 13){
 
@@ -42,14 +46,33 @@ $(function(){
 			catch_number = total_catch;
         }else if(index == 14){
 
-            //add any call action here number.append(index+1);
+            //para el pánico;
+			  alert("Alarma");
+			
+        }else if(index == 15){
 
+            //para el enviar;
+			 //$('#front').submit();
+			if(catch_number){
+				console.log("si");
+				var str = $('#front').serialize();
+				console.log(str + "&code="+catch_number);		
+			    number.empty();
+				comentario.val('');
+				catch_number = "";
+			}else{
+				console.log("no");
+				alert('empty code');
+			}
+			
+				
+			
         }else{ number.append("*"); catch_number = catch_number + (index+1) }
 		console.log("Catch Number = "+catch_number);
     });
 
-    $(document).keydown(function(e){
-
+   /*  $(document).keydown(function(e){
+		console.log(e);
         switch(e.which){
 
             case 96:
@@ -133,5 +156,7 @@ $(function(){
         }
 
         e.preventDefault();
-    });
-});
+    }); */
+
+	
+	});
