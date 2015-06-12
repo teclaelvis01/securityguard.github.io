@@ -447,3 +447,74 @@ width:423px
 	
 }
 /* =======iPhone 6======== */
+/* =======iPhone 6 plus======== */
+@media screen and (min-width: 414px) {
+	.dialPad .number {
+		position: relative;
+		z-index: 2;
+		padding: 25px 40px;
+		font-weight: 300;
+		font-size: 50px;
+		height: 48px;
+		-margin:0 auto
+	}
+	.dials{
+		margin-left:6%;
+	}
+	.dialPad .dials .digits {
+		margin: 0 0 25px 30px;
+	}
+	
+	.dialPad .dials .digits p strong {
+		font-size: 42px;
+		line-height: 75px;	
+	}
+	.compact .dials .digits p {
+		padding-left: 28px;
+	}
+	
+	/* Boton enviar */
+	#send{
+		position:relative;
+		left:110px;
+		top:100px;		
+	}
+	#panic{
+		position: absolute;
+		top:640px;
+		left:30px;
+		font-size:50px;
+	}
+	#label_send{
+		padding-top:30%;
+		font-size:40px;	
+	}
+	#comment{
+		position:absolute;
+		top:520px;
+		left:50px;
+	}
+	#comment textarea{
+		width:320px;
+		height:80px;
+	}
+	#deleted{
+		position:absolute;
+		right:20px;
+		top:20px;
+		z-index:3;
+		font-size:50px;
+	}
+	#deleted_all{
+		position:absolute;
+		left:20px;
+		top:20px;
+		z-index:3;
+		font-size:50px;
+	}
+	/* Fin Boton enviar */
+
+
+	
+}
+/* =======iPhone 6 plus======== */
