@@ -56,10 +56,12 @@ $(function(){
 			if(catch_number){
 				console.log("si");
 				var str = $('#front').serialize();
-				console.log(str + "&code="+catch_number);		
+				console.log(str + "&code="+catch_number);
+				alert('Test: Codigo= '+catch_number+' '+str);
 			    number.empty();
 				comentario.val('');
 				catch_number = "";
+				
 			}else{
 				console.log("no");
 				alert('empty code');
