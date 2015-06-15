@@ -8,13 +8,26 @@ $(function(){
     var number = $(".number");
 	var comentario = $("#comentario");
 	var catch_number = "";
-    var total;
+    var total="";
 	var total_catch;
+	
+	/* Función Borrar atrás */
+	function borrar_atras(){
+			total = number.text();
+            total = total.slice(0,-1);
+            number.empty().append(total);
+			
+			total_catch = catch_number;
+			total_catch = total_catch.slice(0,-1);
+			catch_number = total_catch;
+		}
+		
+	/* Fin Función Borrar atrás */
 
     dials.click(function(){
-
+		
         index = dials.index(this);
-		console.log(index);
+		if(number.text().length<8){
 		//console.log(number.append(index+1));
         if(index == 9){
 
@@ -36,46 +49,54 @@ $(function(){
 			//catch_number = "";
 
         }else if(index == 13){
-
-            total = number.text();
-            total = total.slice(0,-1);
-            number.empty().append(total);
-			
-			total_catch = catch_number;
-			total_catch = total_catch.slice(0,-1);
-			catch_number = total_catch;
+		
+            borrar_atras();
         }else if(index == 14){
 
             //para el pánico;
 			  alert("Alarma");
 			
-        }else if(index == 15){
+        }else if(index == 15){} 
+		else{ number.append("*"); catch_number = catch_number + (index+1) }
+		
+		}else{
+			
+			if(index == 13){
+				borrar_atras();		
+			}
+		}
+		/* Borrar todo */
+		if(index == 16){
+            number.empty();
+			catch_number = "";
+        }
+		/* Fin Borrar todo */
+		
+		/* Enviar */
+		if(index == 15){
 
             //para el enviar;
 			 //$('#front').submit();
 			if(catch_number){
-				console.log("si");
 				var str = $('#front').serialize();
-				console.log(str + "&code="+catch_number);
-				alert('Test: Codigo= '+catch_number+' '+str);
+				if(str.length>11)
+					alert('Codigo= '+catch_number+' '+str);
+				else 
+					alert('Codigo= '+catch_number);
 			    number.empty();
 				comentario.val('');
 				catch_number = "";
 				
 			}else{
-				console.log("no");
+				//console.log("no");
 				alert('empty code');
 			}
 			
 				
 			
-        }else if(index == 16){
-
-            number.empty();
-			catch_number = "";
-
-        }else{ number.append("*"); catch_number = catch_number + (index+1) }
-		console.log("Catch Number = "+catch_number);
+        }
+		
+		
     });
 
    /*  $(document).keydown(function(e){
