@@ -563,7 +563,7 @@ width:400px
 }
 /* ======= fin screen 1024======== */
 /*=============Screen 1370px================*/
-@media (max-width: 1370px){
+@media (min-width: 1360px){
 /* .dialPad .dials {
 
 background: #fff;
