@@ -291,7 +291,7 @@ clear: both
 	#comment{
 	position:absolute;
 	top:350px;
-	left:40px;
+	left:11%;
 	}
 	#deleted{
 		position:absolute;
@@ -388,10 +388,10 @@ clear: both
 	#comment{
 		position:absolute;
 		top:490px;
-		left:45px;
+		left:8%;
 	}
 	#comment textarea{
-		width:300px;
+		width:80%;
 		height:60px;
 		font-size:20px;
 	}
@@ -426,9 +426,14 @@ clear: both
 		font-size: 50px;
 		height: 48px;
 	}
-	.dials{
-		margin-left:6%;
-	}
+	
+	 .dialPad .dials {
+
+		margin: 0 auto;
+		background: #fff;
+		cursor: pointer;
+		width:423px
+		}
 	
 	.dialPad .dials .digits {
 		margin: 0 0 15px 11%;
@@ -439,7 +444,6 @@ clear: both
 		line-height: 75px;	
 	}
 	.compact .dials .digits p {
-		//padding-left: 28px;
 		padding-left: 37%;
 		
 	}
@@ -460,19 +464,18 @@ clear: both
 		padding-top:30%;
 		font-size:40px;	
 	}
-	.center{left:25%;width:50%;height:50%;top:25%;background:#f0f;position:absolute;text-align:center;}
+
 	#comment{
 		position:absolute;
-		top:490px;
-		/*left:50px; */
-		left:10%;
+		top:490px;	
 		height:50%;
-		width:80%;
+		left:10%
 	}
 	#comment textarea{
-		width:100%;
+		-width:100%;
 		height:80px;
 		font-size:25px;
+		
 	}
 	#deleted{
 		position:absolute;
@@ -510,14 +513,16 @@ text-align:center;
 
 }
  .dialPad .dials {
+
 margin: 0 auto;
 background: #fff;
 cursor: pointer;
 width:423px
 }
 
+
 #comment{
-	left:200px;
+	left:25%;
 	}
 #deleted{
 	right:240px;
@@ -555,10 +560,11 @@ width:400px
 #comment{
 	position:absolute;
 	top:490px;
-	left:325px;
+	left:30%;
+	margin:0 auto;
 	}
 #deleted{
-	right:340px;
+	right:28%;
 			
 	}
 #deleted_all{
@@ -593,17 +599,18 @@ margin:0% auto
 #comment{
 	position:absolute;
 	top:460px;
-	left:495px;
+	left:39%;
+	margin:0 auto;
 	}
 #deleted{
-	right:500px;
+	right:35%;
 			
 	}
 #deleted_all{
-	left:470px;		
+	left:37%;		
 }	
 #panic{
-	left:460px;
+	left:37%;
 	top:560px;
 }
 #comment textarea{
