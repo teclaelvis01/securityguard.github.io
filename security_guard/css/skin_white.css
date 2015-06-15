@@ -251,49 +251,9 @@ clear: both
 	/* ============================================
 ==================== MEDIA ====================
 =============================================== */
-/*=============Screen================*/
-@media (max-width: 1370px){
-/* .dialPad .dials {
 
-background: #fff;
-cursor: pointer;
-margin:0% auto;
-width:423px
-} */
-.dialPad .number {
-position: relative;
-z-index: 2;
-padding: 15px 20px;
-color: #4d4d4d;
-font-weight: 300;
-font-size: 30px;
-background: #fff;
-height: 78px;
-text-align:center;
-margin:0% auto
-}
-}
 /* Tabletas (Vertical y Horizontal) ----------- */
-@media (max-width : 1024px) {
-.dialPad .number {
-position: relative;
-z-index: 2;
-padding: 15px 20px;
-color: #4d4d4d;
-font-weight: 300;
-font-size: 30px;
-background: #fff;
-height: 78px;
-text-align:center;
--margin:0 auto
-}
-/*  .dialPad .dials {
-margin: 0 auto;
-background: #fff;
-cursor: pointer;
-width:423px
-} */
-}
+
 
 /* =======iPhone 4 & 5======== */
 @media screen and (min-width: 320px) {
@@ -308,6 +268,10 @@ width:423px
 	height: 28px;
 	-margin:0 auto
 	}
+	 .dialPad .dials {
+		width:320px
+		}
+
  	/* Boton enviar */
 	#send{
 		position:relative;
@@ -386,6 +350,9 @@ width:423px
 	.dials{
 		margin-left:3%;
 	}
+	.dialPad .dials {
+		width:375px
+		}
 	.dialPad .dials .digits {
 		float: left;
 		position: relative;
@@ -457,11 +424,11 @@ width:423px
 		font-weight: 300;
 		font-size: 50px;
 		height: 48px;
-		-margin:0 auto
 	}
 	.dials{
 		margin-left:6%;
 	}
+	
 	.dialPad .dials .digits {
 		margin: 0 0 15px 30px;
 	}
@@ -520,3 +487,126 @@ width:423px
 	
 }
 /* =======iPhone /6 plus======== */
+
+/* ======= screen 768======== */
+@media (min-width : 768px) {
+.dialPad .number {
+position: relative;
+z-index: 2;
+padding: 15px 20px;
+color: #4d4d4d;
+font-weight: 300;
+font-size: 30px;
+width:350px;
+height: 78px;
+text-align:center;
+
+}
+ .dialPad .dials {
+margin: 0 auto;
+background: #fff;
+cursor: pointer;
+width:423px
+}
+
+#comment{
+	left:200px;
+	}
+#deleted{
+	right:240px;
+			
+	}
+#deleted_all{
+	left:200px;		
+}	
+#panic{
+	left:180px;
+}
+}
+/* ======= fin screen 768======== */
+
+/* ======= screen 1024======== */
+@media (min-width : 1024px) {
+.dialPad .number {
+position: relative;
+z-index: 2;
+padding: 15px 20px;
+color: #4d4d4d;
+font-weight: 300;
+font-size: 30px;
+width:300px;
+height: 78px;
+text-align:center;
+}
+ .dialPad .dials {
+margin: 0 auto;
+background: #fff;
+cursor: pointer;
+width:400px
+}
+
+#comment{
+	position:absolute;
+	top:490px;
+	left:325px;
+	}
+#deleted{
+	right:340px;
+			
+	}
+#deleted_all{
+	left:300px;		
+}	
+#panic{
+	left:330px;
+}
+}
+/* ======= fin screen 1024======== */
+/*=============Screen 1370px================*/
+@media (max-width: 1370px){
+/* .dialPad .dials {
+
+background: #fff;
+cursor: pointer;
+margin:0% auto;
+width:423px
+} */
+.dialPad .number {
+position: relative;
+z-index: 2;
+padding: 15px 20px;
+font-weight: 300;
+font-size: 30px;
+background: #fff;
+height: 48px;
+text-align:center;
+margin:0% auto
+}
+
+#comment{
+	position:absolute;
+	top:460px;
+	left:495px;
+	}
+#deleted{
+	right:500px;
+			
+	}
+#deleted_all{
+	left:470px;		
+}	
+#panic{
+	left:460px;
+	top:560px;
+}
+#comment textarea{
+		width:320px;
+		height:80px;
+		font-size:25px;
+	}
+#send{
+	top:80px;		
+	}
+	
+}
+/* ======= fin screen 1370px======== */
