@@ -269,7 +269,7 @@ clear: both
 	-margin:0 auto
 	}
 	 .dialPad .dials {
-		width:320px
+		width:100%
 		}
 
  	/* Boton enviar */
@@ -291,7 +291,11 @@ clear: both
 	#comment{
 	position:absolute;
 	top:350px;
-	left:14%;
+	left:15%;
+	}
+	#comment textarea{
+		width:80%;
+		
 	}
 	#deleted{
 		position:absolute;
