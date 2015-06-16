@@ -98,8 +98,9 @@ $(function(){
 				
 				
 			}else{
+				
 				//console.log("no");
-				alert('Alerta !!!\r \n Est\xe1 intentando enviar un c\xf3digo vac\xedo. \r Corriga este error ingresando en el touch pad de Security Guard el c\xf3digo diario.');
+				alert('Alerta !!!\r \n Est\xe1 intentando enviar un c\xf3digo vac\xedo. \r Corriga este error ingresando el c\xf3digo diario en el touch pad de Security Guard .');
 			}
 			
 				
