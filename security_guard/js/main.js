@@ -54,7 +54,11 @@ $(function(){
         }else if(index == 14){
 
             //para el pánico;
-			  alert("Alarma");
+			var alarma_resp = confirm("Presione el bot\xf3n ACEPTAR para enviar la alarma !!!");
+			if(alarma_resp){
+				alert("Alarma generada exitosamente !!");
+			}
+			  
 			
         }else if(index == 15){} 
 		else{ number.append("*"); catch_number = catch_number + (index+1) }
@@ -95,7 +99,7 @@ $(function(){
 				
 			}else{
 				//console.log("no");
-				alert('empty code');
+				alert('Alerta !!!\r \n Est\xe1 intentando enviar un c\xf3digo vac\xedo. \r Corriga este error ingresando en el touch pad de Security Guard el c\xf3digo diario.');
 			}
 			
 				
