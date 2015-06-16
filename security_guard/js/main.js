@@ -78,14 +78,20 @@ $(function(){
             //para el enviar;
 			 //$('#front').submit();
 			if(catch_number){
-				var str = $('#front').serialize();
+								
+				var responsemsg = confirm("\u00bfEst\u00e1  seguro de enviar el c\xf3digo? ");
+				if(responsemsg){
+					var str = $('#front').serialize();
+					alert('Mensaje enviado exitosamente !!!');
 				if(str.length>11)
-					alert('Codigo= '+catch_number+' '+str);
+					console.log('Codigo= '+catch_number+' '+str);
 				else 
-					alert('Codigo= '+catch_number);
+					console.log('Codigo= '+catch_number);
 			    number.empty();
 				comentario.val('');
 				catch_number = "";
+				}
+				
 				
 			}else{
 				//console.log("no");
