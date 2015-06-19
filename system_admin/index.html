@@ -15,8 +15,11 @@
 </head>
 <body>    
 <div class="row">
+ 
+			
 	<div id="nav-left" class="col-xs-6 col-md-1 left nav-left .nano-content">
-		 <div class="navbar-header">
+		 <span  ><a href="#" id="nav-left-ico-close"><i class="fa fa-close fa-lg"></i></a></span>
+		 <div class="navbar-header">					
 		  <a class="navbar-brand" href="#">
 			<img alt="Security Guard" src="./img/logo03.png">
 		  </a>
@@ -65,6 +68,8 @@
 			<aside class="primary">
 				<view class="panel">
 					<header>
+						<span id="nav-left-ico" ><a href="#"><i class="fa fa-bars nano-icon fa-2x"></i></a></span>
+						
 							<h1>&aacute;reas</h1>
 					</header>
 					<footer >
@@ -266,5 +271,18 @@
 <script src="./js/bootstrap.min.js"></script>
 <!-- ====================/JS=========================
 =================================================== -->
+<script type="text/javascript">
+$(function(){
+$('#nav-left-ico').click(function(){
+	$("#nav-left").addClass("mostrarnav");
+	$('#nav-left-ico-close').css('visibility','visible');
+});
+$('#nav-left-ico-close').click(function(){
+	$("#nav-left").removeClass("mostrarnav");
+});
+
+
+});
+</script>
 </body>
 </html>
