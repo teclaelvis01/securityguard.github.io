@@ -317,12 +317,12 @@ left: -100px;
 }
 #nav-left-ico-close{
 	position: absolute;
-	z-index: 200;
 	left: 35px;
 	top: 7px;
 	color: #CBCBCB;
+	width: 100%;
 }
-#nav-left span{
+#nav-left span a{
 display: block !important;
 }
 aside {
@@ -405,7 +405,7 @@ color:red;
 margin-left: 35px;
 }
 
-#nav-left span{
+#nav-left span a{
 display: none;
 }
 #nav-left-ico{
