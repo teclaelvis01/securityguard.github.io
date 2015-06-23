@@ -145,6 +145,28 @@
 						</div>
 					</div>
 					</div>
+					<!-- Btn Check list -->
+					<div class="row">
+					          <div class="col-sm-6 col-lg-4">
+							<h4 class="">Card</h4>
+							<p>
+							  <input id="switch-state" type="checkbox" name="my-checkbox" checked>
+							</p>
+							</div>
+						  
+						  <!-- 
+						<div class="col-md-12">
+						<div class="btn-group" data-toggle="buttons">
+						  <label class="btn btn-primary active ">
+							<input type="radio" name="options" id="option1" value="1" autocomplete="off" checked> Card
+						  </label>
+						  <label class="btn btn-primary" style="width: 57px;">
+							<input type="radio" name="options" id="option2" value="2" autocomplete="off"> List 
+						  </label>						  
+						</div>
+						</div>-->
+					</div> 
+					  <br>
 					
 					<!-- Panel -->
 					<div class="box col-md-4">
@@ -248,8 +270,111 @@
 						  </div>
 						</div>
 					  </div>
-					<!-- /paneles -->
+					  <hr>
 					
+
+					<!-- /paneles -->
+					<div class="row">
+						<div class="col-md-12">
+							<div class="table-responsive hide">
+					  <table class="table table-hover">
+						<thead>
+							<tr>
+								<th>ZONE</th>
+								<th>STATIONS</th>
+								<th>GUARDS</th>
+								<th>ALERT</th>
+								<th>VIEW</th>								
+							</tr>
+							<tbody>
+								<tr>
+									<td>Zone 1</td>
+									<td>05</td>
+									<td>7</td>
+									<td><span class="label label-success"><i class="fa fa-check-circle "></i> Success</span></td>
+									<td> 
+									<button type="button" class="btn btn-info btn-xs"><i class="fa fa-search "></i> view</button>
+									</td>
+								</tr>
+								<tr>
+									<td>Zone 2</td>
+									<td>03</td>
+									<td>5</td>
+									<td><span class="label label-warning"><i class="fa fa-warning "></i> Warning</span></td>
+									<td> 
+									<button type="button" class="btn btn-info btn-xs"><i class="fa fa-search "></i> view</button>
+									</td>
+								</tr>
+								<tr>
+									<td>Zone 3</td>
+									<td>03</td>
+									<td>5</td>
+									<td><span class="label label-danger"><i class="fa fa-life-ring "></i> Danger</span></td>
+									<td> 
+									<button type="button" class="btn btn-info btn-xs"><i class="fa fa-search "></i> view</button>
+									</td>
+								</tr>
+								<tr>
+									<td>Zone 1</td>
+									<td>05</td>
+									<td>7</td>
+									<td><span class="label label-success"><i class="fa fa-check-circle "></i> Success</span></td>
+									<td> 
+									<button type="button" class="btn btn-info btn-xs"><i class="fa fa-search "></i> view</button>
+									</td>
+								</tr>
+								<tr>
+									<td>Zone 2</td>
+									<td>03</td>
+									<td>5</td>
+									<td><span class="label label-warning"><i class="fa fa-warning "></i> Warning</span></td>
+									<td> 
+									<button type="button" class="btn btn-info btn-xs"><i class="fa fa-search "></i> view</button>
+									</td>
+								</tr>
+								<tr>
+									<td>Zone 3</td>
+									<td>03</td>
+									<td>5</td>
+									<td><span class="label label-danger"><i class="fa fa-life-ring "></i> Danger</span></td>
+									<td> 
+									<button type="button" class="btn btn-info btn-xs"><i class="fa fa-search "></i> view</button>
+									</td>
+								</tr>
+								<tr>
+									<td>Zone 1</td>
+									<td>05</td>
+									<td>7</td>
+									<td><span class="label label-success"><i class="fa fa-check-circle "></i> Success</span></td>
+									<td> 
+									<button type="button" class="btn btn-info btn-xs"><i class="fa fa-search "></i> view</button>
+									</td>
+								</tr>
+								<tr>
+									<td>Zone 2</td>
+									<td>03</td>
+									<td>5</td>
+									<td><span class="label label-warning"><i class="fa fa-warning "></i> Warning</span></td>
+									<td> 
+									<button type="button" class="btn btn-info btn-xs"><i class="fa fa-search "></i> view</button>
+									</td>
+								</tr>
+								<tr>
+									<td>Zone 3</td>
+									<td>03</td>
+									<td>5</td>
+									<td><span class="label label-danger"><i class="fa fa-life-ring "></i> Danger</span></td>
+									<td> 
+									<button type="button" class="btn btn-info btn-xs"><i class="fa fa-search "></i> view</button>
+									</td>
+								</tr>
+							</tbody>
+							
+						</thead>
+					  </table>
+					</div>
+						</div>
+					</div>
 			</content>
 		</section>
 	</main>
@@ -260,6 +385,7 @@
 
 	<!-- ===============Css===================
 	=======================================-->
+	 <link href="./asset/css/bootstrap-switch.css" rel="stylesheet">
 	<link href="./asset/css/bootstrap.min.css" rel="stylesheet">
 	<link href="./asset/css/custom.css" rel="stylesheet">
 	<link href="./asset/font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -272,20 +398,12 @@
 =================================================== -->
 <script src="./js/jquery-1.11.3.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
+
+<script src="./js/highlight.js"></script>
+<script src="./js/bootstrap-switch.js"></script>
+<script src="./js/main.js"></script>
 <!-- ====================/JS=========================
 =================================================== -->
-<script type="text/javascript">
-$(function(){
-$('#nav-left-ico').click(function(){
-	$("#nav-left").addClass("mostrarnav");
-	$('#nav-left-ico-close').css('visibility','visible');
-});
-$('#nav-left-ico-close').click(function(){
-	$("#nav-left").removeClass("mostrarnav");
-});
-
-
-});
-</script>
+<script src="./js/custom.js"></script>
 </body>
 </html>
