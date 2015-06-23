@@ -49,4 +49,19 @@ $('input[name="my-checkbox"]').on('switchChange.bootstrapSwitch', function(event
   }
 });
 
+
+/* Activando contenido right */
+$("#arrow-right").click(function(){
+	$('#contenido').fadeIn(100).addClass();
+	$('#nav-left').addClass('hide');
+	$('.primary').addClass('hide');
+	
+});
+/* Ocultando contenido right */
+$("#arrow-top-left").click(function(){
+	$('#contenido').css('display','none');	
+	$('#nav-left').removeClass('hide');
+	$('.primary').removeClass('hide');	
+});
+
 });

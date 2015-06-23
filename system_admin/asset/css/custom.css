@@ -365,13 +365,23 @@ aside.primary {
  content {
   left: 320px;
 }
+
+.right-ico{
+	display:none !important;
+}
+
+
+
 }
 /* Fin media1 */
 @media screen and (max-width: 800px){
 .contenido{
-display:none;
-background-color:#fff;
+ display:none;
+ background-color:#fff;
 
+}
+.top-ico{
+visibility:visible !important;
 }
 
 }
@@ -421,4 +431,21 @@ display: none;
 position:relative;
 float: left;
 visibility:hidden;
+}
+.right-ico{
+  position:absolute;
+  right: 20px;
+  top: 30px;
+  width:50px;
+}
+.top-ico{
+visibility:hidden;
+position:absolute;
+top: 0px;
+left:0px;
+width:50px;
+padding-left:20px;
+}
+.mostrar-top-ico{
+display:block !important;
 }
