@@ -39,11 +39,13 @@ $('input[name="my-checkbox"]').on('switchChange.bootstrapSwitch', function(event
 
   console.log(state); // true | false
   if(state){
-	$('.box').removeClass('hide');
-	$('.table-responsive').addClass('hide');   
+	//$('.box').removeClass('hide');
+	$('.box').fadeIn('slow').removeClass('hide');
+	$('.table-responsive').addClass('hide');
+	
   }else{
 	$('.box').addClass('hide');
-	$('.table-responsive').removeClass('hide');  
+	$('.table-responsive').fadeIn('slow').removeClass('hide');  
   }
 });
 

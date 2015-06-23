@@ -697,7 +697,7 @@
       offColor: "default",
       onText: "ON",
       offText: "OFF",
-      labelText: "&nbsp;",
+      labelText: "<i class='fa fa-bars fa-rotate-90'></i>",
       handleWidth: "auto",
       labelWidth: "auto",
       baseClass: "bootstrap-switch",
