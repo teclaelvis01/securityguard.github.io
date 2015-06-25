@@ -72,28 +72,28 @@ var data0 = [
         "STATIONS": "05",
         "GUARDS": "7",
         "ALERT": "<span class='label label-success'><i class='fa fa-check-circle '></i> Success</span>",
-		"VIEW": "<button type='button' class='btn btn-info btn-xs'><i class='fa fa-search '></i> view</button>"
+		"VIEW": "<a href='./stations.html' class='btn btn-info btn-xs'><i class='fa fa-search '></i> view</a>"
     },
 	{
         "ZONE": "Clave 2",
         "STATIONS": "03",
         "GUARDS": "5",
         "ALERT": "<span class='label label-warning'><i class='fa fa-warning '></i> Success</span>",
-		"VIEW": "<button type='button' class='btn btn-info btn-xs'><i class='fa fa-search '></i> view</button>"
+		"VIEW": "<a href='./stations.html' class='btn btn-info btn-xs'><i class='fa fa-search '></i> view</a>"
     },
 	{
         "ZONE": "Clave 3",
         "STATIONS": "04",
         "GUARDS": "8",
         "ALERT": "<span class='label label-danger'><i class='fa fa-life-ring '></i> Success</span>",
-		"VIEW": "<button type='button' class='btn btn-info btn-xs'><i class='fa fa-search '></i> view</button>"
+		"VIEW": "<a href='./stations.html' class='btn btn-info btn-xs'><i class='fa fa-search '></i> view</a>"
     },
 	{
         "ZONE": "Clave 4",
         "STATIONS": "03",
         "GUARDS": "7",
         "ALERT": "<span class='label label-success'><i class='fa fa-check-circle '></i> Success</span>",
-		"VIEW": "<button type='button' class='btn btn-info btn-xs'><i class='fa fa-search '></i> view</button>"
+		"VIEW": "<a href='./stations.html' class='btn btn-info btn-xs'><i class='fa fa-search '></i> view</a>"
     }
     
 	
