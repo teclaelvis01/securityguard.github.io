@@ -66,7 +66,7 @@ $("#arrow-top-left").click(function(){
 
 
 /* Prueba tabla */
-var data = [
+var data0 = [
     {
         "ZONE": "Clave 1",
         "STATIONS": "05",
@@ -100,8 +100,9 @@ var data = [
 ];
 
 $('#table').bootstrapTable({
-        data: data
+        data: data0
     });
+	
 	function queryParams() {
     return {
         type: 'owner',
@@ -111,5 +112,7 @@ $('#table').bootstrapTable({
         page: 1
     };
 }
+
+
 
 });

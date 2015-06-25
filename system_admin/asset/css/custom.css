@@ -336,6 +336,10 @@ aside {
 #nav-left-ico{
 visibility:visible  !important;
 }
+.top-ico-retro{
+left:50px !important;
+top:5px !important;
+}
 
 }
 
@@ -383,7 +387,8 @@ aside.primary {
 .top-ico{
 visibility:visible !important;
 }
-
+.top-ico-tasks{
+visibility:visible !important;}
 }
 
 /* Fin media2 */
@@ -438,11 +443,19 @@ visibility:hidden;
   top: 30px;
   width:50px;
 }
-.top-ico{
+.top-ico,.top-ico-retro{
 visibility:hidden;
 position:absolute;
 top: 0px;
 left:0px;
+width:50px;
+padding-left:20px;
+}
+.top-ico-tasks{
+visibility:hidden;
+position:absolute;
+top: 7px;
+right:7px;
 width:50px;
 padding-left:20px;
 }
