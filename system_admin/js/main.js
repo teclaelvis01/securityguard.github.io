@@ -9,8 +9,12 @@
     sectionTop = $(".top").outerHeight() + 20;
     $createDestroy = $("#switch-create-destroy");
     hljs.initHighlightingOnLoad();
+	if($(window).width() <= 800){
+		$.fn.bootstrapSwitch.defaults.size = 'normal';
+	}else {
+		$.fn.bootstrapSwitch.defaults.size = 'mini';
+	}
 	
-	$.fn.bootstrapSwitch.defaults.size = 'mini';
 	$.fn.bootstrapSwitch.defaults.onColor = 'success';
 	$.fn.bootstrapSwitch.defaults.offColor = 'danger';
 	
