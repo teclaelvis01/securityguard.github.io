@@ -362,6 +362,7 @@ aside {
 main{
   top: 0;
   left: 90px;
+  overflow-x: hidden
 }
 aside.primary {
   right: auto;
@@ -373,7 +374,10 @@ aside.primary {
 .right-ico{
 	display:none !important;
 }
-
+.alert{
+position:absolute;
+right:0px;
+}
 
 
 }
