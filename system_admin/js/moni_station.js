@@ -79,5 +79,38 @@ for(i=1; i<5;i++){
         data: data2
     });	
 	/* Fin Datos tabla 2 */
+	/* BOTON STATIONS */
+	$('#btn_stations_view').click(function(){
+		if($(window).width() <= 480){
+			
+		 $('#contenido').css('display','none');	
+		 
+		 console.log('pantalla 480');
+			}else{
+				if ($('#ico_stations_view').hasClass('fa-rotate-90')){
+				$('#ico_stations_view').removeClass('fa-rotate-90');
+				$('#contenido').removeClass('mostrarnav');
+			}else{
+				$('#ico_stations_view').addClass('fa-rotate-90');
+				$('#contenido').addClass('mostrarnav');
+			}
+			}
+	});
+	
+	/* Activando contenido right */
+$("#arrow-right").click(function(){
+	$('#contenido').fadeIn(100).addClass();
+	$('#nav-left').addClass('hide');
+	$('.primary').addClass('hide');
+	
+});
+/* Ocultando contenido right */
+$("#arrow-top-left").click(function(){
+	$('#contenido').css('display','none');	
+	$('#nav-left').removeClass('hide');
+	$('.primary').removeClass('hide');	
+});
+	
+	
 	
 });
