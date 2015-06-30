@@ -9,6 +9,22 @@ $('#nav-left-ico-close').click(function(){
 });
 
 
+$('#arrow-right-view-area').click(function(){
+	console.log('Hola');
+	$('#contenido').removeClass('contenido');
+	$('#nav-left').addClass('hide');
+	$('#aside').addClass('hide');
+});
+
+$('#arrow-top-left').click(function(){
+	console.log('Hola12222');
+	$('#contenido').addClass('contenido');
+	$('#nav-left').removeClass('hide');
+	$('#aside').removeClass('hide');
+});
+
+
+
 $('.btn-group input').on('change', function() {
 	var val = $('input[name="options"]:checked', '.btn-group').val();
    if(val == "1"){
@@ -50,19 +66,7 @@ $('input[name="my-checkbox"]').on('switchChange.bootstrapSwitch', function(event
 });
 
 
-/* Activando contenido right */
-$("#arrow-right").click(function(){
-	$('#contenido').fadeIn(100).addClass();
-	$('#nav-left').addClass('hide');
-	$('.primary').addClass('hide');
-	
-});
-/* Ocultando contenido right */
-$("#arrow-top-left").click(function(){
-	$('#contenido').css('display','none');	
-	$('#nav-left').removeClass('hide');
-	$('.primary').removeClass('hide');	
-});
+
 
 
 /* Prueba tabla */

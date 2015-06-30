@@ -81,27 +81,31 @@ for(i=1; i<5;i++){
 	/* Fin Datos tabla 2 */
 	/* BOTON STATIONS */
 	$('#btn_stations_view').click(function(){
-		if($(window).width() <= 480){
+		if($(window).width() <= 800){
 			
-		 $('#contenido').css('display','none');	
+		 $('#contenido2').removeClass('contenido2');	
+		 $('#contenido2').css('display','none');
 		 
 		 console.log('pantalla 480');
 			}else{
 				if ($('#ico_stations_view').hasClass('fa-rotate-90')){
 				$('#ico_stations_view').removeClass('fa-rotate-90');
-				$('#contenido').removeClass('mostrarnav');
+				$('#contenido2').removeClass('mostrarnav');
+				console.log('pantalla 480AAAAA');
 			}else{
 				$('#ico_stations_view').addClass('fa-rotate-90');
-				$('#contenido').addClass('mostrarnav');
+				$('#contenido2').addClass('mostrarnav');
+				console.log('pantalla 480sdsd');
 			}
 			}
 	});
 	
 	/* Activando contenido right */
 $("#arrow-right").click(function(){
-	$('#contenido').fadeIn(100).addClass();
-	$('#nav-left').addClass('hide');
-	$('.primary').addClass('hide');
+	$('#contenido2').addClass('contenido2');
+	console.log("que fue");
+/* 	$('#nav-left').addClass('hide');
+	$('.primary').addClass('hide'); */
 	
 });
 /* Ocultando contenido right */
