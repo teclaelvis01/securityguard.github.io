@@ -191,11 +191,16 @@ font-size:24px;
 .nano-content a{
 text-decoration:none;
 }
+
+ .area-title.active{
+  background-color: #6f5499;
+}
+
 .nano-content .active{
 /* background-color:#ACFFAC; */
 }
 .nano-content .active h1,.nano-content .active i,.nano-content .active p{
-color:#322103;
+color:#fff;
 }
 
 
