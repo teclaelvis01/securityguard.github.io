@@ -6,7 +6,12 @@ body {
   background-color: white;
 }
 .navbar-brand{
-  padding: 35px 15px;
+
+margin-left: -15px;
+}
+.navbar-brand>img {
+  width: 70px;
+  display: initial !IMPORTANT;
 }
 .left{
 	position: absolute;
