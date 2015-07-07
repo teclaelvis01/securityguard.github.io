@@ -89,17 +89,23 @@ for(i=1; i<5;i++){
 		 console.log('pantalla 480');
 			}else{
 				if ($('#ico_stations_view').hasClass('fa-rotate-90')){
-				$('#ico_stations_view').removeClass('fa-rotate-90');
-				$('#contenido2').removeClass('mostrarnav');
+				open_lateral();
 				console.log('pantalla 480AAAAA');
 			}else{
-				$('#ico_stations_view').addClass('fa-rotate-90');
-				$('#contenido2').addClass('mostrarnav');
+				close_lateral();
 				console.log('pantalla 480sdsd');
 			}
 			}
 	});
 	
+	function open_lateral(){
+		$('#ico_stations_view').removeClass('fa-rotate-90');
+		$('#contenido2').removeClass('mostrarnav');
+	}
+	function close_lateral(){
+		$('#ico_stations_view').addClass('fa-rotate-90');
+		$('#contenido2').addClass('mostrarnav');
+	}
 	/* Activando contenido right */
 $("#arrow-right").click(function(){
 	$('#contenido2').addClass('contenido2');
@@ -114,7 +120,27 @@ $("#arrow-top-left").click(function(){
 	$('#nav-left').removeClass('hide');
 	$('.primary').removeClass('hide');	
 });
-	
+
+
+$('#table2 tr').click(function() { 
+var age = $(this).find("td").eq(0).html(); 
+console.log(age);// for testing purpose 
+if(age=="Ipad 10.2"){
+	open_lateral();
+}
+}); 
 	
 	
 });
+
+// Row Style
+function rowStyle(row, index) {
+    var classes = ['active', 'success', 'info', 'warning', 'danger'];
+    
+    if (index === 0 ) {
+        return {
+            classes: classes[4]
+        };
+    }
+    return {};
+}

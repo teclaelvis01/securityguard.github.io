@@ -1,3 +1,60 @@
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+.bs-callout code {
+    border-radius: 3px;
+}
+.bs-callout+.bs-callout {
+    margin-top: -5px;
+}
+.bs-callout-default {
+    border-left-color: #777;
+}
+.bs-callout-default h4 {
+    color: #777;
+}
+.bs-callout-primary {
+    border-left-color: #428bca;
+}
+.bs-callout-primary h4 {
+    color: #428bca;
+}
+.bs-callout-success {
+    border-left-color: #5cb85c;
+}
+.bs-callout-success h4 {
+    color: #5cb85c;
+}
+.bs-callout-danger {
+    border-left-color: #d9534f;
+}
+.bs-callout-danger h4 {
+    color: #d9534f;
+}
+.bs-callout-warning {
+    border-left-color: #f0ad4e;
+}
+.bs-callout-warning h4 {
+    color: #f0ad4e;
+}
+.bs-callout-info {
+    border-left-color: #5bc0de;
+}
+.bs-callout-info h4 {
+    color: #5bc0de;
+}
+
 body {
   font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -27,7 +84,7 @@ margin-left: -15px;
   position: relative;
   overflow: hidden;
 }
-main,section, aside, .panel,body,
+main,section, aside,body,
  app, header, footer, content, view, group, article, nav{
   display: block;
   position: absolute;
@@ -172,11 +229,14 @@ header>h1, header>hgroup, header .bar>h1, header .bar>hgroup, header .page-conte
 	background-color:none;
 }
 
-.nano-content .row-area  :hover,
-.nano-content .row-area  :active{
+.nano-content .row-area  :hover{
 background-color:#74C274;
-
+color:#fff;
 }
+.nano-content .row-area  :active{
+  background-color:#74b274;
+}
+
 .row-area  .area-title:hover{
 color:#fff;
 }
@@ -198,7 +258,8 @@ text-decoration:none;
 }
 
  .area-title.active{
-  background-color: #6f5499;
+  background-color: #27b527;
+  color:#fff;
 }
 
 .nano-content .active{
@@ -510,6 +571,12 @@ float: right;
 margin-right: 10px;
 margin-top: -60px;
 }
+
+.angle-right-station{
+ float: right;
+margin-right: 10px;
+margin-top: -40px; 
+}
 .center-info{
 position: absolute;
 left: 50%;
@@ -517,4 +584,9 @@ top: 50%;
 transform: translate(-50%, -50%);
 -webkit-transform: translate(-50%, -50%);
 text-align: center;
+}
+.btn-report-right{
+  float: right;
+  top:0px;
+  margin-top: -25px;
 }
