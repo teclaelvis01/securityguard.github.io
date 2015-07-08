@@ -122,6 +122,7 @@ $("#arrow-top-left").click(function(){
 });
 
 
+
 $('#table2 tr').click(function() { 
 var age = $(this).find("td").eq(0).html(); 
 console.log(age);// for testing purpose 
@@ -129,6 +130,19 @@ if(age=="Ipad 10.2"){
 	open_lateral();
 }
 }); 
+
+$('#imprimir_reporte').click(function(){
+	console.log('hola');
+	var str = $('#report2').serialize();
+	console.log(str);
+
+	
+
+});
+$('#report2').submit(function(){
+	var str = $('#report2').serialize();
+	console.log(str);
+});
 	
 	
 });

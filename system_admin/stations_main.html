@@ -67,9 +67,13 @@
 				<view class="panel">
 					<header>
 						<span id="nav-left-ico" ><a href="#"><i class="fa fa-bars nano-icon fa-2x"></i></a></span>
-						<a id="" href="./zones.html"><i style="visibility: visible;" class="fa fa-angle-left top-ico-retro fa-3x  "></i></a>
-						<a id="arrow-right" href="#"><i class="fa fa-tasks top-ico-tasks fa-2x  "></i></a>
+						
+						<a id="" href="./zones.html"><i style="visibility: visible;" class="fa fa-angle-left top-ico-retro fa-3x  "></i>
 						<h1 style="float: left; margin-left: 30px; margin-top: -9px;">ZONE 1</h1>
+						</a>
+
+						<a id="arrow-right" href="#"><i class="fa fa-tasks top-ico-tasks fa-2x  "></i></a>
+						
 					</header>
 					<article class="nano">
 						<div class="nano-content">
@@ -82,21 +86,29 @@
 								<button type="button" class="btn btn-danger "><i class="fa fa-power-off"></i></button>
 							</div>
 							</a>
-							<a class="row-area" href="#">
-							<div class="area-title ">
+							<br>
+
+							<a class="row-area" href="./stations_main.html">
+							<div class="area-title active">
 								<span class="folder"><i id="" class="fa fa-history  fa-3x"></i></span>
 								<h4>Activity Log</h4>
 								<span class="angle-right-station"><i class="fa fa-angle-right fa-3x"></i></span>
 							</div>
 							</a>
-							<a class="row-area" href="./stationsreport2.html">
+							<a class="row-area" href="./stationsreport1.html">
 							<div class="area-title ">
 								<span class="folder"><i id="" class="fa fa-folder  fa-3x"></i></span>
 								<h4>Reports</h4>
 								<span class="angle-right-station"><i class="fa fa-angle-right fa-3x"></i></span>
 							</div>
 							</a>
-							
+							<a class="row-area" href="./stationsinfohardware.html">
+							<div class="area-title ">
+								<span class="folder"><i id="" class="fa fa-cubes  fa-3x"></i></span>
+								<h4>Info Hardware</h4>
+								<span class="angle-right-station"><i class="fa fa-angle-right fa-3x"></i></span>
+							</div>
+							</a>
 							
 						</div>
 					</article>
@@ -106,22 +118,44 @@
 			<content id="contenido" class="contenido ">
 				<div class="row">
 				<a id="arrow-top-left" href="#"><i  class="fa fa-angle-left top-ico fa-3x  "></i></a>
-					<h1 class="title-contenido"><i class="fa  fa-file-text-o fa-2x"></i> REPORT IPAD 10.2</h1>
+					<h1 class="title-contenido"><i class="fa  fa-history fa-2x"></i> ACTIVITY LOG</h1>
 				</div>
 				<!-- Breadcrumbs -->
 				<ol class="breadcrumb">
 				  <li><a href="./index.html">Santa Rosa</a></li>
 				  <li><a href="./zones.html">Zone 1</a></li>
-				  <li class="active">Stations [Ipad 10.2] </li>	
+				  <li class="active">Activity Log (Stations [Ipad 10.2]) </li>	
 				  
 				</ol>
 				<!-- Fin Breadcrumbs -->
 				<div class="row" style="margin-left: 0px;padding-bottom: 15px;background-color: white;">
 					
-						<div class="center-info">
-							<span style="color:	#cdcdcd;"><i class="fa fa-file-text-o fa-3x"></i></span>
-							<p>Select a report to view detail</p>
-							<h5>1 de 2 Reportes</h5>
+						<div class="col-md-1 ">
+							<span><i class="fa fa-tasks fa-3x"></i></span>
+						</div>
+						<div class="col-md-10 ">
+								<div class="table-responsive ">
+						<!-- Tabla prueba -->
+							<table id="table1"  data-search="true"
+							data-show-refresh="true"
+							data-show-columns="true"
+							data-query-params="queryParams"
+							data-pagination="true"
+							data-classes="table table-hover">
+								<thead>
+									<tr>			
+										<th data-field="GUARD" data-sortable="true">GUARD</th>
+										<th data-field="DATETIME" data-sortable="true">DATETIME</th>
+										<th data-field="CODE VALIDATION" data-sortable="true">CODE VALIDATION</th>
+										<th class="col-xs-1" data-field="ALERT" data-sortable="true">ALERT</th>
+										<th data-field="VIEW" data-sortable="true">VIEW</th>
+									</tr>
+								</thead>
+							</table>
+
+						<!-- Fin tabla prueba -->
+
+						</div>
 						</div>
 				</div>
 						

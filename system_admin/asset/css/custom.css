@@ -62,6 +62,9 @@ body {
   color: #737b8a;
   background-color: white;
 }
+.panel a, .contenido2 a{
+  text-decoration: none;
+}
 .navbar-brand{
 
 margin-left: -15px;
