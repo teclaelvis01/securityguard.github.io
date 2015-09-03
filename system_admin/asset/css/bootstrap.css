@@ -3387,7 +3387,7 @@ fieldset[disabled] .btn-warning.active {
 }
 .btn-danger {
   color: #fff;
-  background-color: #d9534f;
+  background-color: #d9534f !important;
   border-color: #d43f3a;
 }
 .btn-danger:focus,
@@ -6797,4 +6797,5 @@ button.close {
     display: none !important;
   }
 }
+
 /*# sourceMappingURL=bootstrap.css.map */
