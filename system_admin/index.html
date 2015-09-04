@@ -1,39 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="img/favi.png" rel="shortcut icon">
 	<title>Security Guard Panel</title>
-	<!-- ===============Css===================
-	=======================================-->
 	<link href="./asset/css/bootstrap.min.css" rel="stylesheet">
-	<link href="./asset/css/custom.css" rel="stylesheet">
-	<link href="./asset/font-awesome/css/font-awesome.css" rel="stylesheet">
-	<!-- ===============/Css===================
-	=======================================-->
 </head>
 <body>    
 <div class="row">
  
 			
 	<div id="nav-left" class="col-xs-6 col-md-1 left nav-left .nano-content">
-		 <span  ><a href="#" id="nav-left-ico-close"><i class="fa fa-close fa-lg"></i></a></span>
+		 <span  >
+		 <a href="#" id="nav-left-ico-close">
+		 <i class="fa fa-close fa-lg"></i>
+		 </a></span>
 		 <div class="navbar-header">					
 		  <a class="navbar-brand" href="#">
-			<img alt="Security Guard" src="./img/logo03.png">
+			<img alt="Security Guard" src="./img/logodos.svg" >
 		  </a>
 		</div>
 		<ul class="nav nav-pills nav-stacked " >
 			<li class="active">
-				<a class="monitoring" href="#">
-				<br>
-				<i class="fa fa-bitbucket fa-2x fa-rotate-180"></i>
+				<a class="monitoring" href="./index.html">
+				<i class="fa fa-bitbucket fa-2x fa-rotate-180"></i><br>
 				<span>monitoring</span>
 				</a>
 			</li> 
 			<li >
-				<a class="system" href="#">
+				<a class="system" href="./system_users.html">
 				<i class="fa fa-cog fa-2x "></i>
 				<br>
 				<span>system</span>
@@ -68,12 +65,11 @@
 	</div>
 	<main>
 		<section>			
-			<aside class="primary">
+			<aside class="primary" id="aside">
 				<view class="panel">
 					<header>
-						<span id="nav-left-ico" ><a href="#"><i class="fa fa-bars nano-icon fa-2x"></i></a></span>
-						
-							<h1>&aacute;reas</h1>
+						<span id="nav-left-ico"  style="  margin: 0px;"  ><a href="#"><i class="fa fa-bars nano-icon fa-2x"></i></a></span>
+						<h1>&aacute;reas</h1>
 					</header>
 					<footer >
 					<p class="text-left" id="account-info">3/4 Áreas Activas</p>
@@ -86,8 +82,11 @@
 					<article class="nano">
 						<div class="nano-content">
 							<a class="row-area " href="#">
-							<div class="area-title ">									
-								<i class="fa fa-globe fa-5x nano-icon fa"></i>
+							<div class="area-title active">									
+								<div class="alert"><span style="color:#E83E00 !important;"><i class="fa fa-exclamation-triangle fa-2x"></i></span></div>
+								<i class="fa fa-globe fa-5x nano-icon"></i>
+								<i id="arrow-right-view-area" class="fa fa-angle-right right-ico fa-5x  "></i>
+								
 								<h1 class="title">Santa Rosa</h1>
 								<p><i class="fa fa-clock-o"></i><b> Last view:</b> hace 11 hrs</p>
 							</div>
@@ -119,11 +118,13 @@
 				</view>
 			
 			</aside>
-			<content class="contenido">
+			<content id="contenido" class="contenido ">
 				<div class="row">
-					<h1 class="title-contenido"><i class="fa fa-cube fa-cube fa-2x"></i> INFO &Aacute;REA</h1>
+
+				<a id="arrow-top-left" href="#"><i  class="fa fa-angle-left top-ico fa-3x  "></i></a>
+					<h1 class="title-contenido"><i class="fa fa-cube fa-cube fa-2x"></i> &Aacute;REA [Santa Rosa]</h1>
 				</div>
-				<div class="row" style="margin-bottom: 15px;">
+				<div class="row" style="margin-left: 0px;padding-bottom: 15px;background-color: white;">
 					<div class="col-md-4">
 						<div class="col-md-2"><i class="fa fa-user fa-2x"></i></div>
 						<div class="col-md-10">
@@ -151,37 +152,26 @@
 						</div>
 					</div>
 					</div>
+					<!-- Btn Check list -->
+					<div style="margin-left: 0px; " class="row">
+					          <div class="col-sm-6 col-lg-4">
+							<span><i class="fa fa-list-alt fa-2x"></i></span>
+							<span><i class="fa fa-list-ul fa-2x"></i></span>
+							<p>
+							  <input id="switch-state" type="checkbox" name="my-checkbox" checked>
+							</p>
+							</div>
+						  
+						 
+					</div> 
+					  <br>
 					
 					<!-- Panel -->
+					
 					<div class="box col-md-4">
 						<div class="box-header brown-background">						
 						  <div class="title">
-							<a href="#" style="font-size:0.8em"><i class="fa fa-home fa-lg"></i> Zone 1</a>
-						  </div>
-						  <div class="actions">
-							<a style="color: #5CB85C;" href="#"><i class="fa fa-check-circle fa-2x"></i>
-							</a>
-						  </div>
-						</div>
-						<div class="box-content clearfix">
-						 <br>
-						  <div class="box-contentK box-statistic col-sm-6">
-								<h3 class="title text-grey">05</h3>
-								<small>STATIONS</small>
-							  <div class="icon-center fa fa-sitemap fa-3x align-right" ></div>
-						  </div>
-						  <div class="box-contentK box-statistic col-sm-6">
-								<h3 class="title text-grey">07</h3>
-							  <small>GUARDS</small>
-							  <div class="icon-center fa fa-users fa-3x align-right"></div>
-						  </div>
-						</div>
-					  </div>
-					  <!-- Panel -->
-					  <div class="box col-md-4">
-						<div class="box-header brown-background">						
-						  <div class="title">
-							<a  href="#" style="font-size:0.8em"><i class="fa fa-home fa-lg"></i> Zone 1</a>
+							<a href="./zones.html" style="font-size:0.8em"><i class="fa fa-home fa-lg"></i> Zone 1</a>
 						  </div>
 						  <div class="actions">
 							<a style="color: #f0ad4e;" href="#"><i class="fa fa-warning fa-2x"></i>
@@ -192,7 +182,7 @@
 						 <br>
 						  <div class="box-contentK box-statistic col-sm-6">
 								<h3 class="title text-grey">05</h3>
-								<small>STATIONS</small>
+								<small>zones</small>
 							  <div class="icon-center fa fa-sitemap fa-3x align-right" ></div>
 						  </div>
 						  <div class="box-contentK box-statistic col-sm-6">
@@ -207,7 +197,33 @@
 					  <div class="box col-md-4">
 						<div class="box-header brown-background">						
 						  <div class="title">
-							<a  href="#" style="font-size:0.8em"><i class="fa fa-home fa-lg"></i> Zone 1</a>
+							<a  href="./zones.html" style="font-size:0.8em"><i class="fa fa-home fa-lg"></i> Zone 2</a>
+						  </div>
+						  <div class="actions">
+							<a style="color: #5CB85C;" href="#"><i class="fa fa-check-circle fa-2x"></i>
+							</a>
+						  </div>
+						</div>
+						<div class="box-content clearfix">
+						 <br>
+						  <div class="box-contentK box-statistic col-sm-6">
+								<h3 class="title text-grey">05</h3>
+								<small>zones</small>
+							  <div class="icon-center fa fa-sitemap fa-3x align-right" ></div>
+						  </div>
+						  <div class="box-contentK box-statistic col-sm-6">
+								<h3 class="title text-grey">07</h3>
+							  <small>GUARDS</small>
+							  <div class="icon-center fa fa-users fa-3x align-right"></div>
+						  </div>
+						</div>
+					  </div>
+					  
+					  <!-- Panel -->
+					  <div class="box col-md-4">
+						<div class="box-header brown-background">						
+						  <div class="title">
+							<a  href="./zones.html" style="font-size:0.8em"><i class="fa fa-home fa-lg"></i> Zone 3</a>
 						  </div>
 						  <div class="actions">
 							<a style="color: #D9534F;" href="#"><i class="fa fa-life-ring fa-2x"></i>
@@ -233,7 +249,7 @@
 					  <div class="box col-md-4">
 						<div class="box-header brown-background">						
 						  <div class="title">
-							<a  href="#" style="font-size:0.8em"><i class="fa fa-home fa-lg"></i> Zone 1</a>
+							<a  href="./zones.html" style="font-size:0.8em"><i class="fa fa-home fa-lg"></i> Zone 4</a>
 						  </div>
 						  <div class="actions">
 							<a style="color: #f0ad4e;" href="#"><i class="fa fa-warning fa-2x"></i>
@@ -254,8 +270,38 @@
 						  </div>
 						</div>
 					  </div>
-					<!-- /paneles -->
+					  <hr>
 					
+
+					<!-- /paneles -->
+					<div class="row">
+						<div class="col-md-12">
+							<div class="table-responsive hide">
+								<!-- Tabla prueba -->
+					<table id="table"  data-search="true"
+						data-show-refresh="true"
+						data-show-columns="true"
+						data-query-params="queryParams"
+						data-pagination="true"
+						data-classes="table table-hover">
+						 <thead>
+						<tr>			
+							<th data-field="ZONE" data-sortable="true">ZONE</th>
+							<th data-field="STATIONS" data-sortable="true">STATIONS</th>
+							<th data-field="GUARDS" data-sortable="true">GUARDS</th>
+							<th class="col-xs-1" data-field="ALERT" data-sortable="true">ALERT</th>
+							<th data-field="VIEW" data-sortable="true">VIEW</th>
+						</tr>
+						</thead>
+					</table>
+
+					<!-- Fin tabla prueba -->
+					  
+					</div>
+						</div>
+					</div>
+					
+				
 			</content>
 		</section>
 	</main>
@@ -264,7 +310,15 @@
 
 </div><!--/row  -->
 
+	<!-- ===============Css===================
+	=======================================-->
+	 <link href="./asset/css/bootstrap-switch.css" rel="stylesheet">
 
+	<link href="./asset/css/custom.css" rel="stylesheet">
+	<link href="./asset/font-awesome/css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="./asset/css/bootstrap-table.css">
+	<!-- ===============/Css===================
+	=======================================-->
 
 
 
@@ -272,20 +326,14 @@
 =================================================== -->
 <script src="./js/jquery-1.11.3.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
+
+<script src="./js/highlight.js"></script>
+<script src="./js/bootstrap-switch.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/bootstrap-table.js"></script>
+<script src="./js/bootstrap-table-es-MX.js"></script>
 <!-- ====================/JS=========================
 =================================================== -->
-<script type="text/javascript">
-$(function(){
-$('#nav-left-ico').click(function(){
-	$("#nav-left").addClass("mostrarnav");
-	$('#nav-left-ico-close').css('visibility','visible');
-});
-$('#nav-left-ico-close').click(function(){
-	$("#nav-left").removeClass("mostrarnav");
-});
-
-
-});
-</script>
+<script src="./js/custom.js"></script>
 </body>
 </html>
