@@ -364,6 +364,7 @@ aside.primary {
 @media screen and (max-width: 800px){
 .contenido{
 visibility:hidden;
+display:none !important
 
 }
 

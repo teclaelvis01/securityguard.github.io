@@ -42,7 +42,7 @@
 </div>
 <ul class="sign-form">
 <li>
-<p class="here">Credenciales, por favor.</p>
+<p class="here">Credenciales, por favor !!!</p>
 </li>
 <li class="sep"><input autofocus="autofocus" class="form-control" id="email" name="email" placeholder="Usuario" tabindex="1" type="email"></li>
 <li><input class="form-control" id="password" name="password" placeholder="Tu contraseña" tabindex="2" type="password"></li>
@@ -72,13 +72,13 @@
 <script>
   var body = document.body,
   timer;
-  
+
   window.addEventListener('scroll', function() {
     clearTimeout(timer);
     if(!body.classList.contains('disable-hover')) {
       body.classList.add('disable-hover')
     }
-  
+
     timer = setTimeout(function(){
       body.classList.remove('disable-hover')
     },500);
